@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B1E82965241103530087DC36 /* bg-001.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B1E82964241103530087DC36 /* bg-001.jpg */; };
+		B1E8296724110DA70087DC36 /* PlanButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E8296624110DA70087DC36 /* PlanButton.swift */; };
+		B1E8296A241114F60087DC36 /* bg-002.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B1E82968241114F60087DC36 /* bg-002.jpg */; };
+		B1E8296B241114F60087DC36 /* bg-003.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B1E82969241114F60087DC36 /* bg-003.jpg */; };
 		B1E9DBDB240FCAAF005E07DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E9DBDA240FCAAF005E07DD /* AppDelegate.swift */; };
 		B1E9DBDD240FCAAF005E07DD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E9DBDC240FCAAF005E07DD /* SceneDelegate.swift */; };
 		B1E9DBDF240FCAAF005E07DD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E9DBDE240FCAAF005E07DD /* ViewController.swift */; };
@@ -16,6 +20,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B1E82964241103530087DC36 /* bg-001.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "bg-001.jpg"; sourceTree = "<group>"; };
+		B1E8296624110DA70087DC36 /* PlanButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanButton.swift; sourceTree = "<group>"; };
+		B1E82968241114F60087DC36 /* bg-002.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "bg-002.jpg"; sourceTree = "<group>"; };
+		B1E82969241114F60087DC36 /* bg-003.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "bg-003.jpg"; sourceTree = "<group>"; };
 		B1E9DBD7240FCAAF005E07DD /* Prepare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Prepare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1E9DBDA240FCAAF005E07DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B1E9DBDC240FCAAF005E07DD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +45,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B1B2C90E240FCE3700B0B4B1 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				B1E82968241114F60087DC36 /* bg-002.jpg */,
+				B1E82969241114F60087DC36 /* bg-003.jpg */,
+				B1E82964241103530087DC36 /* bg-001.jpg */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
 		B1E9DBCE240FCAAF005E07DD = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +74,7 @@
 		B1E9DBD9240FCAAF005E07DD /* Prepare */ = {
 			isa = PBXGroup;
 			children = (
+				B1B2C90E240FCE3700B0B4B1 /* Images */,
 				B1E9DBDA240FCAAF005E07DD /* AppDelegate.swift */,
 				B1E9DBDC240FCAAF005E07DD /* SceneDelegate.swift */,
 				B1E9DBDE240FCAAF005E07DD /* ViewController.swift */,
@@ -63,6 +82,7 @@
 				B1E9DBE3240FCAB0005E07DD /* Assets.xcassets */,
 				B1E9DBE5240FCAB0005E07DD /* LaunchScreen.storyboard */,
 				B1E9DBE8240FCAB0005E07DD /* Info.plist */,
+				B1E8296624110DA70087DC36 /* PlanButton.swift */,
 			);
 			path = Prepare;
 			sourceTree = "<group>";
@@ -125,6 +145,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1E8296A241114F60087DC36 /* bg-002.jpg in Resources */,
+				B1E82965241103530087DC36 /* bg-001.jpg in Resources */,
+				B1E8296B241114F60087DC36 /* bg-003.jpg in Resources */,
 				B1E9DBE7240FCAB0005E07DD /* LaunchScreen.storyboard in Resources */,
 				B1E9DBE4240FCAB0005E07DD /* Assets.xcassets in Resources */,
 				B1E9DBE2240FCAAF005E07DD /* Main.storyboard in Resources */,
@@ -140,6 +163,7 @@
 			files = (
 				B1E9DBDF240FCAAF005E07DD /* ViewController.swift in Sources */,
 				B1E9DBDB240FCAAF005E07DD /* AppDelegate.swift in Sources */,
+				B1E8296724110DA70087DC36 /* PlanButton.swift in Sources */,
 				B1E9DBDD240FCAAF005E07DD /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
