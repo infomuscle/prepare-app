@@ -11,19 +11,25 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBOutlet var scrollView: UIScrollView!
+    @IBOutlet var navBar: UINavigationBar!
+    
     var plans = Array<Array<String>>()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        navBar.setBackgroundImage(UIImage(), for: .default)
+        navBar.shadowImage = UIImage()
 
         plans = [["Los Angeles", "bg-001.jpg"], ["Las Vegas", "bg-002.jpg"], ["San Francisco", "bg-003.jpg"], ["San Diegeo", "bg-004.jpg"]]
 
         let lblX: CGFloat = 16
         var lblY: CGFloat = 15
         let btnX: CGFloat = 16
-        var btnY: CGFloat = 45
+        var btnY: CGFloat = 40
+        
+        
+        
         
         if plans.isEmpty {
             // Label
@@ -50,6 +56,7 @@ class ViewController: UIViewController {
                 let dynamicLbl = UILabel()
                 dynamicLbl.text = plans[i][0]
                 dynamicLbl.textColor = UIColor.lightGray
+                dynamicLbl.font = UIFont.systemFont(ofSize: 14, weight: UIFont.Weight(rawValue: 0.1))
                 dynamicLbl.frame = CGRect(x: lblX, y: lblY, width: 200, height: 21)
                 self.scrollView.addSubview(dynamicLbl)
                 
