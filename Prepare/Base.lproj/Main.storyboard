@@ -29,8 +29,7 @@
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="U1g-fz-LHj">
                             <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
-                                <action selector="addNewPlan:" destination="BYZ-38-t0r" id="e0f-h4-sQ5"/>
-                                <segue destination="MOh-vc-er3" kind="show" id="s7K-8e-V24"/>
+                                <segue destination="MOh-vc-er3" kind="show" id="xfK-0O-Mjm"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -66,8 +65,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TEST" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uLw-do-rJF">
-                                <rect key="frame" x="16" y="396" width="343" height="21"/>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dDX-yV-vpe">
+                                <rect key="frame" x="27" y="142" width="321" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XOQ-15-Fhy">
+                                <rect key="frame" x="27" y="113" width="34" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -77,9 +82,16 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="GnW-7z-bfL"/>
                     </view>
-                    <navigationItem key="navigationItem" id="YEQ-eZ-gul"/>
+                    <navigationItem key="navigationItem" id="YEQ-eZ-gul">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="Bhb-kY-H7k">
+                            <connections>
+                                <action selector="savePlan:" destination="MOh-vc-er3" id="7i2-1O-TdQ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
-                        <outlet property="testLbl" destination="uLw-do-rJF" id="wsh-yv-1nV"/>
+                        <outlet property="planTitle" destination="XOQ-15-Fhy" id="gRV-sA-NV5"/>
+                        <outlet property="tfTitle" destination="dDX-yV-vpe" id="Afd-zM-tfl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JTX-bK-cBg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
