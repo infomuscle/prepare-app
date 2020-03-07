@@ -66,30 +66,8 @@ class ViewController: UIViewController, SaveDelegate {
         
         // Case: Plan Data
         else {
-            
-            for i in 0..<plans.count {
-                // Label
-                let dynamicLbl = UILabel()
-                dynamicLbl.text = plans[i].title!
-                dynamicLbl.textColor = UIColor.lightGray
-                dynamicLbl.font = UIFont.systemFont(ofSize: 14, weight: UIFont.Weight(rawValue: 0.1))
-                dynamicLbl.frame = CGRect(x: lblX, y: lblY, width: 200, height: 21)
-                self.scrollView.addSubview(dynamicLbl)
-                
-                // Button
-                let dynamicBtn = PlanButton()
-                dynamicBtn.borderColor = UIColor.lightGray
-                dynamicBtn.borderWidth = 1
-                dynamicBtn.cornerRadius = 10
-                
-                dynamicBtn.clipsToBounds = true
-                let bgImg: UIImage? = UIImage(named: plans[i].img!)
-                dynamicBtn.setBackgroundImage(bgImg, for: UIControl.State.normal)
-                dynamicBtn.frame = CGRect(x: btnX, y: btnY, width: 343, height: 161)
-                self.scrollView.addSubview(dynamicBtn)
-                
-                lblY += 210
-                btnY += 210
+            for plan in plans {
+                addPlanButton(plan: plan)
             }
         }
         
