@@ -11,26 +11,38 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBOutlet var scrollView: UIScrollView!
-    @IBOutlet var navBar: UINavigationBar!
+    @IBOutlet var mainNavBar: UINavigationItem!
     
-    var plans = Array<Array<String>>()
+    
+//    var plans = Array<Array<String>>()
+    var plans: [PlanInfo] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        navBar.setBackgroundImage(UIImage(), for: .default)
-        navBar.shadowImage = UIImage()
-
-        plans = [["Los Angeles", "bg-001.jpg"], ["Las Vegas", "bg-002.jpg"], ["San Francisco", "bg-003.jpg"], ["San Diegeo", "bg-004.jpg"]]
-
+        // Navigation Bar Setting
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+        self.navigationItem.title = "PREPARE"
+        
+        // Load plan data from database and add them plans array.
+        let sample = ["Los Angeles", "Las Vegas", "San Francisco", "San Diego"]
+        for i in 0..<sample.count {
+            let planInfo = PlanInfo()
+            
+            planInfo.title = sample[i]
+            
+            planInfo.img = "bg-00" + String(i+1) + ".jpg"
+            plans.append(planInfo)
+        }
+        
+        // Plan button location value
         let lblX: CGFloat = 16
         var lblY: CGFloat = 15
         let btnX: CGFloat = 16
         var btnY: CGFloat = 40
         
-        
-        
-        
+        // Case: No Plan Data
         if plans.isEmpty {
             // Label
             let dynamicLbl = UILabel()
@@ -49,12 +61,15 @@ class ViewController: UIViewController {
             dynamicBtn.setTitleColor(UIColor.lightGray, for: UIControl.State.normal)
             dynamicBtn.frame = CGRect(x: btnX, y: btnY, width: 343, height: 161)
             self.scrollView.addSubview(dynamicBtn)
-        } else {
+        }
+        
+        // Case: Plan Data
+        else {
             
             for i in 0..<plans.count {
                 // Label
                 let dynamicLbl = UILabel()
-                dynamicLbl.text = plans[i][0]
+                dynamicLbl.text = plans[i].title!
                 dynamicLbl.textColor = UIColor.lightGray
                 dynamicLbl.font = UIFont.systemFont(ofSize: 14, weight: UIFont.Weight(rawValue: 0.1))
                 dynamicLbl.frame = CGRect(x: lblX, y: lblY, width: 200, height: 21)
@@ -67,7 +82,7 @@ class ViewController: UIViewController {
                 dynamicBtn.cornerRadius = 10
                 
                 dynamicBtn.clipsToBounds = true
-                let bgImg: UIImage? = UIImage(named: plans[i][1])
+                let bgImg: UIImage? = UIImage(named: plans[i].img!)
                 dynamicBtn.setBackgroundImage(bgImg, for: UIControl.State.normal)
                 dynamicBtn.frame = CGRect(x: btnX, y: btnY, width: 343, height: 161)
                 self.scrollView.addSubview(dynamicBtn)
@@ -79,6 +94,13 @@ class ViewController: UIViewController {
         
         scrollView.contentSize = CGSize(width: btnX, height: btnY)
     }
+    
+    
+    @IBAction func addNewPlan(_ sender: UIBarButtonItem) {
+        
+        
+    }
+    
 
 }
 

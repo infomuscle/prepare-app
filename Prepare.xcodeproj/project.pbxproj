@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B17FBE0B24137F7C0004E417 /* PlanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17FBE0A24137F7C0004E417 /* PlanViewController.swift */; };
+		B17FBE0D241381DC0004E417 /* PlanAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17FBE0C241381DC0004E417 /* PlanAddViewController.swift */; };
+		B17FBE0F2413864C0004E417 /* PlanInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17FBE0E2413864C0004E417 /* PlanInfo.swift */; };
 		B18157EA241299DA0049B61A /* bg-004.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B18157E9241299DA0049B61A /* bg-004.jpg */; };
 		B1E82965241103530087DC36 /* bg-001.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B1E82964241103530087DC36 /* bg-001.jpg */; };
 		B1E8296724110DA70087DC36 /* PlanButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E8296624110DA70087DC36 /* PlanButton.swift */; };
@@ -21,6 +24,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B17FBE0A24137F7C0004E417 /* PlanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanViewController.swift; sourceTree = "<group>"; };
+		B17FBE0C241381DC0004E417 /* PlanAddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanAddViewController.swift; sourceTree = "<group>"; };
+		B17FBE0E2413864C0004E417 /* PlanInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanInfo.swift; sourceTree = "<group>"; };
 		B18157E9241299DA0049B61A /* bg-004.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "bg-004.jpg"; sourceTree = "<group>"; };
 		B1E82964241103530087DC36 /* bg-001.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "bg-001.jpg"; sourceTree = "<group>"; };
 		B1E8296624110DA70087DC36 /* PlanButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanButton.swift; sourceTree = "<group>"; };
@@ -86,6 +92,9 @@
 				B1E9DBE5240FCAB0005E07DD /* LaunchScreen.storyboard */,
 				B1E9DBE8240FCAB0005E07DD /* Info.plist */,
 				B1E8296624110DA70087DC36 /* PlanButton.swift */,
+				B17FBE0A24137F7C0004E417 /* PlanViewController.swift */,
+				B17FBE0C241381DC0004E417 /* PlanAddViewController.swift */,
+				B17FBE0E2413864C0004E417 /* PlanInfo.swift */,
 			);
 			path = Prepare;
 			sourceTree = "<group>";
@@ -166,9 +175,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1E9DBDF240FCAAF005E07DD /* ViewController.swift in Sources */,
+				B17FBE0B24137F7C0004E417 /* PlanViewController.swift in Sources */,
 				B1E9DBDB240FCAAF005E07DD /* AppDelegate.swift in Sources */,
+				B17FBE0D241381DC0004E417 /* PlanAddViewController.swift in Sources */,
 				B1E8296724110DA70087DC36 /* PlanButton.swift in Sources */,
 				B1E9DBDD240FCAAF005E07DD /* SceneDelegate.swift in Sources */,
+				B17FBE0F2413864C0004E417 /* PlanInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
